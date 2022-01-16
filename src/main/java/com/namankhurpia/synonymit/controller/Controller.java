@@ -1,6 +1,7 @@
 package com.namankhurpia.synonymit.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -10,6 +11,7 @@ import com.namankhurpia.synonymit.util.DataSource;
 
 import entity.SearchString;
 
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 public class Controller {
 	
